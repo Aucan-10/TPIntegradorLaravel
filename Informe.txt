@@ -1,0 +1,20 @@
+Justifiquen brevemente por qué el modelo se escribe con la primera letra mayúscula 
+y en singular (Equipo), mientras que la tabla generada en la migración adopta automáticamente 
+una terminación en plural y minúscula (equipos).
+
+Resuesta:
+
+ El modelo "Equipo", se escribe con la primera letra en mayúscula, ya que
+en PHP, los modelos son clases las cuales se encuentran estandarizadas,
+siendo una de las reglas, que empiezen con mayúscula.
+ Adémas, se encuentra en singular ya que un objeto de "Equipo" representa una
+unidad/registro del mismo. Es decir, solo representa un equipo.
+
+ Por otro lado, el nombre de la tabla "equipos" se encuentra en plural ya que
+almacena y muestra muchos equipos. Además, al igual que pasa con "Equipo", se
+escribe "equipos" en minúscula por un estandar de las bases de datos que
+busca prevenir conflictos con sensibilidades a mayúsculas y minúsculas.
+
+ El ORM de Laravel esta configurado para entender que por estandar si una clase se
+denomina "Equipo", la tabla se denominara "equipos". Gracias a esto es capaz de generarla 
+automaticamente, ahorrando codigo.
